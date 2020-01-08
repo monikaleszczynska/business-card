@@ -1,10 +1,74 @@
-html{
+html {
     box-sizing: border-box;
 }
-*,*:after, *:before{
+
+*, *:after, *:before {
     box-sizing: inherit;
 }
 
-body{
-    background: #2C2141;
+body {
+    background: linear-gradient(rgba(255,0,0,0) -20%, rgba(255,0,0,1) 120%);
+    min-height: 100vh;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.card {
+    background: #ebe9e9;
+    border-radius: 16px;
+    max-width: 624px;
+    width: 100%;
+    padding: 32px;
+  
+}
+
+.person{
+    display: flex;
+    align-items: start;
+}
+.person__description{
+    font-size: 16px;
+    line-height: 22px;
+    text-align: justify;
+}
+
+.person__description--last{
+    margin-bottom: 0px;
+}
+
+.person__header{
+    margin-bottom: 32px;
+
+}
+
+.person__link{
+    color: #e63832;
+    text-decoration: none;
+}
+
+
+.person__name{
+    margin: 0px;
+    font-size: 36px;
+    font-weight: normal;
+}
+.person__photo {
+    width: 150px;
+    height: 150px;
+    margin-right: 32px;
+}
+
+.person__position{
+    color: #545454; 
+    font-style: italic;
+    font-size: 18px;
+}
+
+.person__special{
+    color: #ca1753;
+    font-weight: normal;
 }
